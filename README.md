@@ -25,4 +25,4 @@ We are building a clean, highly structured MVP based on a 4-layer architecture:
 
 ## Architecture
 
-![Architecture](/home/levi/Downloads/architecture.png)
+![Architecture](architecture_SOA-CP.png)
