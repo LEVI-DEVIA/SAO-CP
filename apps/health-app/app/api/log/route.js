@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server';
 
 export async function POST(request) {
   const logEvent = await request.json();
-  
+
   const splunkPayload = {
     time: new Date().getTime() / 1000,
     host: "critical-health-app",

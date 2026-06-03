@@ -1,0 +1,32 @@
+[
+    {
+        "matricule": "DOC001",
+        "password": "chu2026",
+        "name": "Dr. House",
+        "specialty": "Cardiologie"
+    },
+    {
+        "matricule": "DOC002",
+        "password": "chu2026",
+        "name": "Dr. Grey",
+        "specialty": "Chirurgie"
+    },
+    {
+        "matricule": "DOC003",
+        "password": "chu2026",
+        "name": "Dr. Who",
+        "specialty": "Urgences"
+    },
+    {
+        "matricule": "DOC004",
+        "password": "chu2026",
+        "name": "Dr. Strange",
+        "specialty": "Neurologie"
+    },
+    {
+        "matricule": "DOC005",
+        "password": "chu2026",
+        "name": "Dr. Maboul",
+        "specialty": "Pédiatrie"
+    }
+]
