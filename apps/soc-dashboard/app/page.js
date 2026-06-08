@@ -77,13 +77,14 @@ export default function SOCDashboard() {
                                 fontWeight: 'bold',
                                 backgroundColor:
                                     alert.status === 'PENDING_HUMAN_APPROVAL' ? '#d2992233' :
-                                        alert.status === 'APPROVED' ? '#3fb95033' : '#f8514933',
+                                        (alert.status === 'APPROVED' || alert.status === 'EXECUTED') ? '#3fb95033' : '#f8514933',
                                 color:
                                     alert.status === 'PENDING_HUMAN_APPROVAL' ? '#d29922' :
-                                        alert.status === 'APPROVED' ? '#3fb950' : '#f85149'
+                                        (alert.status === 'APPROVED' || alert.status === 'EXECUTED') ? '#3fb950' : '#f85149'
                             }}>
                                 {alert.status === 'PENDING_HUMAN_APPROVAL' ? '⏳ EN ATTENTE' :
-                                    alert.status === 'APPROVED' ? '✅ APPROUVÉ' : '❌ REJETÉ'}
+                                    alert.status === 'APPROVED' ? '✅ APPROUVÉ' :
+                                        alert.status === 'EXECUTED' ? '🚀 EXÉCUTÉ' : '❌ REJETÉ'}
                             </span>
                         </div>
 

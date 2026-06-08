@@ -1,5 +1,13 @@
 # SAO-CP
 
+## Demonstration
+
+Check out our video demonstration to see the SAO-CP ecosystem in action:
+
+<video src="Demo_SAO-CP.mp4" controls="controls" style="max-width: 100%; border-radius: 8px;">
+  Your browser does not support the video tag.
+</video>
+
 ## Inspiration
 
 In critical environments like university hospitals (CHU), medical record platforms are prime targets for cyberattacks. Security teams face a difficult dilemma: manual log analysis is too slow to react to modern threats, but giving full autonomy to an AI to block threats is too risky. A false positive from an autonomous AI could accidentally lock out a doctor from a life-saving patient file during an emergency. SAO-CP was born from this exact need: creating a security model where the speed of AI meets the wisdom of human judgment.
@@ -26,3 +34,27 @@ We are building a clean, highly structured MVP based on a 4-layer architecture:
 ## Architecture
 
 ![Architecture](architecture_SOA-CP.png)
+
+## Prerequisites
+
+* [Node.js](https://nodejs.org/)
+* [Python 3.12+](https://www.python.org/)
+* [uv](https://github.com/astral-sh/uv) (for fast Python package management)
+* A `.env` file in `services/agent` containing your `GOOGLE_API_KEY` and Splunk configurations.
+
+## Quick Start (Makefile)
+
+We provide a `Makefile` to easily run and manage the different parts of the project. Open your terminal at the root of the project:
+
+### 1. Install dependencies
+```bash
+make install
+```
+
+### 2. Run the components
+You can run each component in its own terminal window:
+
+* **Backend API**: `make run-api` (Runs on port 8000)
+* **AI Agent**: `make run-agent` (Polls Splunk and talks to the API)
+* **SOC Dashboard**: `make run-soc-dashboard` (Runs on port 3000)
+* **Health App**: `make run-health-app` (Runs on port 3001)
