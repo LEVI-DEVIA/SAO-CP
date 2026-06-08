@@ -1,13 +1,5 @@
 # SAO-CP
 
-## Demonstration
-
-Check out our video demonstration to see the SAO-CP ecosystem in action:
-
-<video src="Demo_SAO-CP.mp4" controls="controls" style="max-width: 100%; border-radius: 8px;">
-  Your browser does not support the video tag.
-</video>
-
 ## Inspiration
 
 In critical environments like university hospitals (CHU), medical record platforms are prime targets for cyberattacks. Security teams face a difficult dilemma: manual log analysis is too slow to react to modern threats, but giving full autonomy to an AI to block threats is too risky. A false positive from an autonomous AI could accidentally lock out a doctor from a life-saving patient file during an emergency. SAO-CP was born from this exact need: creating a security model where the speed of AI meets the wisdom of human judgment.
